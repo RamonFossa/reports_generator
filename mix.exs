@@ -5,7 +5,7 @@ defmodule ReportsGenerator.MixProject do
     [
       app: :reports_generator,
       version: "0.1.0",
-      elixir: "~> 1.13",
+      elixir: "~> 1.12.0",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -19,7 +19,7 @@ defmodule ReportsGenerator.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 end
